@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  # O nome será gerado dinamicamente pelo Helm
   name: {{ .Release.Name }}-status-jogador
   labels:
     app: k8smonster
 data:
-  # Aqui o Helm injeta os valores do seu values.yaml
   nome: {{ .Values.jogador.nome }}
-  dna_atual: {{ .Values.jogador.dna_atual }}
+  forma_atual: {{ .Values.jogador.forma_atual }}
+  mapa_atual: {{ .Values.jogador.mapa_atual }}
   posicao_x: {{ .Values.jogador.posicao.x | quote }}
   posicao_y: {{ .Values.jogador.posicao.y | quote }}
-  mapa_atual: {{ .Values.jogador.mapa_atual }}
+  # Pega a lista de DNAs e junta tudo com vírgulas
+  dnas_capturados: {{ .Values.jogador.inventario.dnas_capturados | join "," | quote }}
