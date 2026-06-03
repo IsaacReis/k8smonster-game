@@ -1,0 +1,14 @@
+jogador:
+  nome: "Pioneiro_Cosmico"
+  # dna_atual: "forma_base"
+  forma_atual: "humano" # Se desequipar, volta pra cá. Se equipar, muda para o nome do DNA.
+  inventario:
+    dnas_capturados:
+      - "gosma_estelar"
+      - "espectro_do_vazio"
+    itens_gerais:
+      - "pocao_de_vida"
+  # posicao:
+  #   x: 10
+  #   y: 15
+  # mapa_atual: "cidade_principal"

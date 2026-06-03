@@ -1,0 +1,6 @@
+apiVersion: v2
+name: player-core
+description: O núcleo de status e DNA do jogador no K8smonster
+type: application
+version: 0.1.0
+appVersion: "1.0"
